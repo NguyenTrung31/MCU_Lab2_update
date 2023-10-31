@@ -219,20 +219,20 @@ void updateLEDMatrix(int index)
       switch(index)
       {
       case 0:
-        getBuffer(matrix_buffer[0]);
-        break;
+    	  getBuffer(matrix_buffer[0]);
+    	  break;
       case 1:
-  	  getBuffer(matrix_buffer[1]);
-        break;
+    	  getBuffer(matrix_buffer[1]);
+    	  break;
       case 2:
           getBuffer(matrix_buffer[2]);
-        break;
+          break;
       case 3:
           getBuffer(matrix_buffer[3]);
-        break;
+          break;
       case 4:
           getBuffer(matrix_buffer[4]);
-        break;
+          break;
       case 5:
           getBuffer(matrix_buffer[5]);
         break;
@@ -284,6 +284,7 @@ void clearENM()
                                ENM3_Pin | ENM4_Pin | ENM5_Pin |
 							   ENM6_Pin | ENM7_Pin, 1);
   }
+
 /* USER CODE END 0 */
 
 /**
@@ -327,6 +328,7 @@ int main(void)
     setTimer2(10);
     setTimer3(10);
     setTimer4(10);
+
    int hour = 12, minute = 03, second = 50;
   while (1)
     {
@@ -436,7 +438,6 @@ int main(void)
   	   		if(index_led_matrix > 7) index_led_matrix = 0;
   	   		 setTimer4(10);
   	   	 }
-
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
